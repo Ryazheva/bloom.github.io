@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: opensans;
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: opensans;
+    font-weight: 600;
+    src: url("../fonts/OpenSans-Semibold.ttf");
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    font-family: "opensans", Arial, Helvetica, sans-serif;
+    width: 100%;
+    font-size: 16px;
+}
+
+header > .container {
+    padding: 40px 20px;
+}
+
+header .burgerIcon {
+    width: 40px;
+    display: none;
+    margin: 0!important;
+}
+
+header .container .menu a {
+    font-size: 0.875em;
+    text-decoration: none;
+    color: #4b4b4e;
+    margin: 0 20px;
+}
+
+header .container .menu a:hover,
+header .container .menu a.active{
+    color: rgb(241, 93, 180);
+    font-weight: 600;
+    padding-bottom: 7px;
+    border-bottom: 3px solid rgb(241, 93, 180);
+}
+
+header .cart {
+    align-items: flex-start;
+}
+
+
+header .cart img {
+    margin-right: 7px;
+}
+
+header .cart div p {
+    font-size: 0.938em;
+    color: #4b4b4e;
+}
+
+header .cart div a {
+    font-size: 0.750em;
+    color: rgb(241, 93, 180);
+}
+
+footer {
+    background-color: rgb(241, 93, 180);
+    margin-left: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .left {
+    align-items: flex-start;
+    padding: 20px 20px;
+}
+
+footer .left nav {
+    padding-top: 35px;
+    margin-left: 100px;
+}
+
+footer .left nav a {
+    display: inline;
+    text-align: left;
+    color: #4b4b4e;
+    font-size: 0.875em;
+    margin: 20px;
+    text-decoration: none;
+}
+
+footer .left nav a:hover, footer .left nav a.active {
+    color: white;
+    padding-bottom: 7px;
+    border-bottom: 3px solid white;
+}
+
+footer .right {
+    text-align: center;
+    font-size: 1em;
+    color: #4b4b4e;
+}
+
+footer .right .box {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 16px;
+}
+
+footer .right .telegram {
+    background: url(../images/main/telegram.png) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+footer .right .telegram:hover {
+    background: url(../images/main/telegram_hover.png) no-repeat;
+    background-size: cover;
+}
+
+footer .right .vk {
+    background: url(../images/main/vk.png) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+footer .right .vk:hover {
+    background: url(../images/main/vk_hover.png) no-repeat;
+    background-size: cover;
+}

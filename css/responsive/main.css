@@ -1,0 +1,50 @@
+/*
+>= 1200
+992-1199
+768-991
+576-767
+*/
+
+@media screen and (max-width: 1199px) {
+
+    * {
+        margin-left: 2px;
+    }
+
+    .boxes {
+        justify-content: space-around;
+    }
+
+    .box figure {
+        padding-left: 52px;
+    }
+
+    .block1 .menu a {
+        font-size: 0.9em;
+    }
+
+}
+
+@media screen and (max-width: 1110px) {
+
+    .box figure {
+        padding-left: 58px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .block1 {
+        display: block;
+        text-align: center;
+    }
+
+    .block1 .menu {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box figure {
+        padding: 13px;
+    }
+}

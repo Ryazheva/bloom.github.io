@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" type="text/css" href="css/header_footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive/header_footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive/main.css" />
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="container d-flex">
+            <img src="images/main/logo.png" alt="Logo" height="100px"/>          
+            <nav class="menu">
+                <a class="active" href="index.html">Каталог</a>
+                <a href="aboutUs.html">О нас</a>
+                <a href="payDelivery.html">Оплата и доставка</a>
+                <a href="contacts.html">Контакты</a>
+                <a href="cart.html">Корзина</a>
+            </nav>
+            <div class="cart d-flex">
+                <img src="images/main/cart_icon.png" alt="cart" height="25px"/>
+                <div>
+                    <p><span id="cart-total">0</span>руб</p>
+                    <a href="payDelivery.html">Оформить заказ</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-fluid">
+        <div class="container">
+            <d class="block1 d-flex">
+                <nav class="menu">
+                    <a href="index.html">Цветы</a>
+                    <a href="strawberry.html">Клубника в шоколаде</a>
+                    <a class="active" href="sweetness.html">Сладкий букет</a>
+                </nav>
+                <div class="items">
+                    <div class="boxes d-flex">
+                        <div class="box">
+                            <figure>
+                                <img src="images/sweetness_foto/zephyr.jpg" alt="Зефир" height="200px" width="200px" />
+                                <figcaption>
+                                    <p><span class="price">3500 </span>руб.</p>
+                                </figcaption>
+                                <p class="title">Зефир</p>
+                                <button
+                                    onclick="addToCart(this)"
+                                    data-product-id="zephyr"
+                                    data-product-name="Зефир"
+                                    data-product-img="images/sweetness_foto/zephyr.jpg"
+                                >
+                                    В корзину
+                                </button>
+                            </figure>
+                        </div>
+                        <div class="box">
+                            <figure>
+                                <img src="images/sweetness_foto/zephyr_marshmallows.jpg" alt="Зефир" height="200px" width="200px" />
+                                <figcaption>
+                                    <p><span class="price">4700 </span>руб.</p>
+                                </figcaption>
+                                <p class="title">Зефир и маршмеллоу</p>
+                                <button
+                                    onclick="addToCart(this)"
+                                    data-product-id="zephyr_marshmallows"
+                                    data-product-name="Зефир"
+                                    data-product-img="images/sweetness_foto/zephyr_marshmallows.jpg"
+                                >
+                                    В корзину
+                                </button>
+                            </figure>
+                        </div>    
+                        <div class="box">
+                            <figure>
+                                <img src="images/sweetness_foto/gelatins.jpg" alt="Желатинки" height="200px" width="200px" />
+                                <figcaption>
+                                    <p><span class="price">2700 </span>руб.</p>
+                                </figcaption>
+                                <p class="title">Желатинки</p>
+                                <button
+                                    onclick="addToCart(this)"
+                                    data-product-id="gelatins"
+                                    data-product-name="Желатинки"
+                                    data-product-img="images/sweetness_foto/gelatins.jpg"
+                                >
+                                    В корзину
+                                </button>
+                            </figure>
+                        </div>
+                        <div class="box">
+                            <figure>
+                                <img src="images/sweetness_foto/mix.jpg" alt="Микс" height="200px" width="200px" />
+                                <figcaption>
+                                    <p><span class="price">3500 </span>руб.</p>
+                                </figcaption>
+                                <p class="title">Микс</p>
+                                <button
+                                    onclick="addToCart(this)"
+                                    data-product-id="mix"
+                                    data-product-name="Микс"
+                                    data-product-img="images/sweetness_foto/mix.jpg"
+                                >
+                                    В корзину
+                                </button>
+                            </figure>
+                        </div>
+                        <div class="box">
+                            <figure>
+                                <img src="images/sweetness_foto/ferrero_rosher.jpg" alt="Ferrero" height="200px" width="200px" />
+                                <figcaption>
+                                    <p><span class="price">5000 </span>руб.</p>
+                                </figcaption>
+                                <p class="title">Ferrero rosher</p>
+                                <button
+                                    onclick="addToCart(this)"
+                                    data-product-id="ferrero_rosher"
+                                    data-product-name="Ferrero rosher"
+                                    data-product-img="images/sweetness_foto/ferrero_rosher.jpg"
+                                >
+                                    В корзину
+                                </button>
+                            </figure>
+                        </div>
+                        <div class="box">
+                            <figure>
+                                <img src="images/sweetness_foto/raffaello.jpg" alt="Raffaello" height="200px" width="200px" />
+                                <figcaption>
+                                    <p><span class="price">5000 </span>руб.</p>
+                                </figcaption>
+                                <p class="title">Raffaello</p>
+                                <button
+                                    onclick="addToCart(this)"
+                                    data-product-id="raffaello"
+                                    data-product-name="Raffaello"
+                                    data-product-img="images/sweetness_foto/raffaello.jpg"
+                                >
+                                    В корзину
+                                </button>
+                            </figure>
+                        </div>
+                        <div class="box">
+                            <figure>
+                                <img src="images/sweetness_foto/kinder.jpg" alt="Kinder" height="200px" width="200px" />
+                                <figcaption>
+                                    <p><span class="price">5000 </span>руб.</p>
+                                </figcaption>
+                                <p class="title">Kinder</p>
+                                <button
+                                    onclick="addToCart(this)"
+                                    data-product-id="kinder"
+                                    data-product-name="Kinder"
+                                    data-product-img="images/sweetness_foto/kinder.jpg"
+                                >
+                                    В корзину
+                                </button>
+                            </figure>
+                        </div>
+                        <div class="box">
+                            <figure>
+                                <img src="images/sweetness_foto/chocolate.jpg" alt="Шоколад" height="200px" width="200px" />
+                                <figcaption>
+                                    <p><span class="price">3000 </span>руб.</p>
+                                </figcaption>
+                                <p class="title">Шоколад</p>
+                                <button
+                                    onclick="addToCart(this)"
+                                    data-product-id="chocolate"
+                                    data-product-name="Шоколад"
+                                    data-product-img="images/sweetness_foto/chocolate.jpg"
+                                >
+                                    В корзину
+                                </button>
+                            </figure>
+                        </div>
+                        <div class="box">
+                            <figure>
+                                <img src="images/sweetness_foto/gelatins_rose.jpg" alt="Желатинки" height="200px" width="200px" />
+                                <figcaption>
+                                    <p><span class="price">2000 </span>руб.</p>
+                                </figcaption>
+                                <p class="title">Желатинки-розы</p>
+                                <button
+                                    onclick="addToCart(this)"
+                                    data-product-id="gelatins_rose"
+                                    data-product-name="Желатинки-розы"
+                                    data-product-img="images/sweetness_foto/gelatins_rose.jpg"
+                                >
+                                    В корзину
+                                </button>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="container-fluid">
+        <div class="container d-flex">
+            <div class="left d-flex">
+                <figure>
+                    <img src="images/main/logo_footer.png" alt="Logo" height="100px">
+                </figure>
+                <nav>
+                    <a class="active" href="index.html">Каталог</a>
+                    <a href="aboutUs.html">О нас</a>
+                    <a href="payDelivery.html">Оплата и доставка</a>
+                    <a href="contacts.html">Контакты</a>
+                    <a href="cart.html">Корзина</a>
+                </nav>
+            </div>
+            <div class="right">
+                <p>Следите за нами в соц сетях</p>
+                <a href="https://t.me/bloom_shop_happy" class="box telegram"></a>
+                <a href="https://vk.com/club230020851" class="box vk"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>

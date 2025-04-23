@@ -1,0 +1,105 @@
+.contacts {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.contacts a {
+    color: #4b4b4e;
+    text-decoration: none;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+    font-size: 1.125em;
+    color: #4b4b4e;
+}
+
+.contact-info, .address-info, .social-links, .contact-form, .requisites {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.info-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-block i {
+    margin-right: 10px;
+    font-size: 1em;
+    color: rgb(241, 93, 180);
+    width: 20px; 
+    text-align: center; 
+}
+
+.info-block p {
+    color:#4b4b4e;
+    font-size: 0.9em;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #4b4b4e;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Важно для правильной ширины */
+}
+
+.contact-form button {
+    background-color:rgb(241, 93, 180);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contact-form button:hover {
+    background-color: rgb(241, 93, 180);
+}
+
+.requisites details {
+    margin-top: 10px;
+    color: #4b4b4e;
+}
+
+.requisites details p {
+    color:#4b4b4e;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .info-block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info-block i {
+        margin-bottom: 5px;
+    }
+}

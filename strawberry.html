@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" type="text/css" href="css/header_footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive/header_footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive/main.css" />
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="container d-flex">
+            <img src="images/main/logo.png" alt="Logo" height="100px"/>       
+            <nav class="menu">
+                <a class="active" href="index.html">Каталог</a>
+                <a href="aboutUs.html">О нас</a>
+                <a href="payDelivery.html">Оплата и доставка</a>
+                <a href="contacts.html">Контакты</a>
+                <a href="cart.html">Корзина</a>
+            </nav>
+            <div class="cart d-flex">
+                <img src="images/main/cart_icon.png" alt="cart" height="25px"/>
+                <div>
+                    <p><span id="cart-total">0</span>руб</p>
+                    <a href="payDelivery.html">Оформить заказ</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-fluid">
+        <div class="container">
+            <div class="block1 d-flex">
+                <nav class="menu">
+                    <a href="index.html">Цветы</a>
+                    <a class="active" href="index2.html">Клубника в шоколаде</a>
+                    <a href="sweetness.html">Сладкий букет</a>
+                </nav>
+                <div class="items">
+                    <div class="boxes d-flex">
+                        <div class="box">
+                            <figure>
+                                <img src="images/strawberry_foto/9.jpg" alt="Клубника в шоколаде" height="200px"  />
+                                <figcaption>
+                                    <p><span class="price">1400 </span>руб.</p>
+                                </figcaption>
+                                <p class="title">Клубника в шоколаде 9шт</p>
+                                <button
+                                    onclick="addToCart(this)"
+                                    data-product-id="9"
+                                    data-product-name="Клубника в шоколаде 9шт"
+                                    data-product-img="images/strawberry_foto/9.jpg"
+                                >
+                                    В корзину
+                                </button>
+                            </figure>
+                        </div>
+                        <div class="box">
+                            <figure>
+                                <img src="images/strawberry_foto/16.jpg" alt="Клубника в шоколаде" height="200px" />
+                                <figcaption>
+                                    <p><span class="price">2500 </span>руб.</p>
+                                </figcaption>
+                                <p class="title">Клубника в шоколаде 16шт</p>
+                                <button
+                                    onclick="addToCart(this)"
+                                    data-product-id="16"
+                                    data-product-name="Клубника в шоколаде 16шт"
+                                    data-product-img="images/strawberry_foto/16.jpg"
+                                >
+                                    В корзину
+                                </button>
+                            </figure>
+                        </div>
+                        <div class="box">
+                            <figure>
+                                <img src="images/strawberry_foto/25.jpg" alt="Клубника в шоколаде" height="200px" />
+                                <figcaption>
+                                    <p><span class="price">3900 </span>руб.</p>
+                                </figcaption>
+                                <p class="title">Клубника в шоколаде 25шт</p>
+                                <button
+                                    onclick="addToCart(this)"
+                                    data-product-id="25"
+                                    data-product-name="Клубника в шоколаде 25шт"
+                                    data-product-img="images/strawberry_foto/25.jpg"
+                                >
+                                    В корзину
+                                </button>
+                            </figure>
+                        </div>
+                        <div class="box">
+                            <figure>
+                                <img src="images/strawberry_foto/S.jpg" alt="Клубника в шоколаде" height="200px" />
+                                <figcaption>
+                                    <p><span class="price">2600 </span>руб.</p>
+                                </figcaption>
+                                <p class="title">Букет размера S</p>
+                                <button
+                                    onclick="addToCart(this)"
+                                    data-product-id="s"
+                                    data-product-name="Букет размера S"
+                                    data-product-img="images/strawberry_foto/S.jpg"
+                                >
+                                    В корзину
+                                </button>
+                            </figure>
+                        </div>
+                        <div class="box">
+                            <figure>
+                                <img src="images/strawberry_foto/M.jpg" alt="Клубника в шоколаде" height="200px" />
+                                <figcaption>
+                                    <p><span class="price">4700 </span>руб.</p>
+                                </figcaption>
+                                <p class="title">Букет размера M</p>
+                                <button
+                                    onclick="addToCart(this)"
+                                    data-product-id="m"
+                                    data-product-name="Букет размера M"
+                                    data-product-img="images/strawberry_foto/m.jpg"
+                                >
+                                    В корзину
+                                </button>
+                            </figure>
+                        </div>
+                        <div class="box">
+                            <figure>
+                                <img src="images/strawberry_foto/L.jpg" alt="Клубника в шоколаде" height="200px" />
+                                <figcaption>
+                                    <p><span class="price">6500 </span>руб.</p>
+                                </figcaption>
+                                <p class="title">Букет размера L</p>
+                                <button
+                                    onclick="addToCart(this)"
+                                    data-product-id="l"
+                                    data-product-name="Букет размера L"
+                                    data-product-img="images/strawberry_foto/l.jpg"
+                                >
+                                    В корзину
+                                </button>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid">
+        <div class="container d-flex">
+            <div class="left d-flex">
+                <figure>
+                    <img src="images/main/logo_footer.png" alt="Logo" height="100px">
+                </figure>
+                <nav>
+                    <a class="active" href="index.html">Каталог</a>
+                    <a href="aboutUs.html">О нас</a>
+                    <a href="payDelivery.html">Оплата и доставка</a>
+                    <a href="contacts.html">Контакты</a>
+                    <a href="cart.html">Корзина</a>
+                </nav>
+            </div>
+            <div class="right">
+                <p>Следите за нами в соц сетях</p>
+                <a href="https://t.me/bloom_shop_happy" class="box telegram"></a>
+                <a href="https://vk.com/club230020851" class="box vk"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>
